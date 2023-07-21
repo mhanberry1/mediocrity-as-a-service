@@ -4,7 +4,6 @@ services:
     build:
       context: .
       args:
-        TESTING: 'true'
         EMAIL: mhanberry1@gmail.com
         DOMAINS: maastalent.com,www.maastalent.com,api.maastalent.com
     ports:

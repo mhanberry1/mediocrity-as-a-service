@@ -1,12 +1,12 @@
 from nginx:alpine
 
-arg TESTING
+arg CREATE_CERT
 arg EMAIL
 arg DOMAINS
 
 run apk add --no-cache certbot-nginx
 
-run if [ ! $TESTING ]; then \
+entrypoint if [ $CREATE_CERT ]; then \
 	nginx && \
 	certbot \
 	--non-interactive \
@@ -14,4 +14,6 @@ run if [ ! $TESTING ]; then \
 	-m $EMAIL \
 	--domains $DOMAINS \
 	--nginx; \
+else \
+	nginx -g 'daemon off;'; \
 fi
