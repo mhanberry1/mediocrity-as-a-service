@@ -150,25 +150,25 @@ footer {
 @keyframes triangle {
 	from {
 		left: -200px;
-		top: 800px;
+		top: 45%;
 		transform: rotate(30deg);
 	}
 
 	33% {
 		left: 0px;
-		top: 700px;
+		top: 40%;
 		transform: rotate(180deg);
 	}
 
 	66% {
 		left: 50px;
-		top: 900px;
+		top: 40%;
 		transform: rotate(-50deg);
 	}
 
 	to {
 		left: -200px;
-		top: 800px;
+		top: 45%;
 		transform: rotate(30deg);
 	}
 }
