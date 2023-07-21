@@ -10,6 +10,7 @@ entrypoint if [ $CREATE_CERT ]; then \
 	-m $EMAIL \
 	--domains $DOMAINS \
 	--nginx; \
+	tail -f /dev/null; \
 else \
 	nginx -g 'daemon off;'; \
 fi
