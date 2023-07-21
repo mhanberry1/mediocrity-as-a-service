@@ -1,4 +1,0 @@
-from certbot/certbot
-
-run apk --no-cache add nginx
-run pip install certbot-nginx
