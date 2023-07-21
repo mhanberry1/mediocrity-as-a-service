@@ -3,9 +3,10 @@ services:
   web:
     build:
       context: .
-      args:
-        EMAIL: mhanberry1@gmail.com
-        DOMAINS: maastalent.com,www.maastalent.com,api.maastalent.com
+    environment:
+      #CREATE_CERT: yes
+      EMAIL: mhanberry1@gmail.com
+      DOMAINS: maastalent.com,www.maastalent.com,api.maastalent.com
     ports:
       - 80:80
     volumes:
