@@ -15,7 +15,7 @@ services:
     volumes:
       - nginx-etc:/etc/nginx
       - nginx-usr-share:/usr/share/nginx
-    command: certbot --non-interactive --agree-tos -m mhanberry1@gmail.com --domains maastalent.com,www.maastalent.com,api.maastalent.com --nginx
+    command: --non-interactive --agree-tos -m mhanberry1@gmail.com --domains maastalent.com,www.maastalent.com,api.maastalent.com --nginx
 
 volumes:
   nginx-etc:

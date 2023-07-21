@@ -1,3 +1,4 @@
-from nginx
+from certbot/certbot
 
-run apt update && apt install -y python3-certbot-nginx
+run apk --no-cache add nginx
+run pip install certbot-nginx
