@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
 :root {
 	--yellow: #ffc759;
 	--pink: #ff7b9c;
@@ -9,7 +11,7 @@
 * {
 	scroll-behavior: smooth;
 	scroll-margin: 50px;
-	font-family: serif;
+	font-family: 'Tinos', serif;
 }
 
 html {
